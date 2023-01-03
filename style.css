@@ -5,7 +5,7 @@
   --color-white: #e9e9e9;
   --color-black: #141d28;
   --color-black-1: #22262c;
-  --color-black-2: #2e2e2f;
+  --color-black-2: #161c24;
 }
 
 /* zorgt voor geen text decoration bij links */
@@ -165,7 +165,7 @@ nav {
 .item1 {
   width: 50%;
   min-height: 600px;
-  background-color: #161c24;
+  background-color: var(--color-black-2);
   border: 2px solid #2e2e2f;
 }
 
@@ -173,7 +173,7 @@ nav {
   padding-left: 60px;
   padding-top: 30px;
   position: absolute;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 900;
   letter-spacing: 2.5px;
 }
@@ -182,7 +182,7 @@ nav {
   position: relative;
   padding-top: 87px;
   padding-left: 60px;
-  font-size: 25px;
+  font-size: 17px;
   max-width: 850px;
 }
 
@@ -197,13 +197,14 @@ nav {
   border: 0px;
   color: var(--color-black-2);
   font-weight: 450;
-  font-size: 23px;
+  font-size: 20px;
   transition: 250ms;
 }
 
 .item1 button:hover {
   transform: scale(1.05);
   cursor: pointer;
+  letter-spacing: 1.05px;
 }
 
 .item1 img {
@@ -217,6 +218,7 @@ nav {
   min-height: 600px;
   background-color: var(--color-black-2);
   text-align: center;
+  border: 2px solid #2e2e2f;
 }
 
 .item3 {
@@ -224,6 +226,7 @@ nav {
   min-height: 600px;
   background-color: var(--color-black-2);
   text-align: center;
+  border: 2px solid #2e2e2f;
 }
 
 .container {
@@ -233,8 +236,7 @@ nav {
 }
 
 .container > div {
-  flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
-  /*demo*/
+  flex: 50%;
   margin-bottom: 20px;
   margin-top: 20px;
   margin-left: 100px;
@@ -245,7 +247,6 @@ nav {
 /* SPONSERS CSS*/
 #supporters {
   text-align: center;
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   color: var(--color-primary);
   padding-top: 30px;
   font-size: 40px;
