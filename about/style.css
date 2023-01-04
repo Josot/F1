@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
 :root {
-  --color-primary: #ff4c29;
+  --color-primary: #fe7b01;
   --color-white: #e9e9e9;
   --color-black: #141d28;
-  --color-black-1: #212b38;
-  --color-black-2: #2e2e2f;
+  --color-black-1: #22262c;
+  --color-black-2: #161c24;
 }
 
 /* zorgt voor geen text decoration bij links */
@@ -24,13 +26,14 @@ a:active {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: sans-serif;
   width: 100%;
   background-color: var(--color-black);
   color: whitesmoke;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -50,7 +53,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
-
   position: relative;
 }
 
@@ -76,49 +78,8 @@ body {
   color: var(--color-primary);
 }
 
-/* pijltje bij nav bar */
-.fas {
-  float: right;
-  margin-left: 10px;
-  padding-top: 3px;
-}
-
-/* dropdown menu style */
-.dropdown-menu {
-  display: none;
-}
-
-.menu-bar ul li:hover .dropdown-menu {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  background-color: var(--color-black);
-}
-
-.menu-bar ul li:hover .dropdown-menu ul {
-  display: block;
-  margin: 10px;
-}
-
-.menu-bar ul li:hover .dropdown-menu ul li {
-  width: 150px;
-  padding: 10px;
-}
-
-.dropdown-menu-1 {
-  display: none;
-}
-
-.dropdown-menu ul li:hover .dropdown-menu-1 {
-  display: block;
-  position: absolute;
-  left: 150px;
-  top: 0;
-  background-color: var(--color-black);
-}
-
 nav {
+  z-index: 2;
   position: sticky;
   top: 0;
 }
@@ -130,11 +91,13 @@ nav {
 
 /* hier onder alle divs en andere van CONTENT */
 
+/* timer div  */
+
 .item1 {
   width: 50%;
   min-height: 600px;
   background-color: var(--color-black-2);
-  border: none;
+  border: 2px solid #2e2e2f;
 }
 
 .item2 {
@@ -142,6 +105,7 @@ nav {
   min-height: 600px;
   background-color: var(--color-black-2);
   text-align: center;
+  border: 2px solid #2e2e2f;
 }
 
 .item3 {
@@ -149,26 +113,61 @@ nav {
   min-height: 600px;
   background-color: var(--color-black-2);
   text-align: center;
+  border: 2px solid #2e2e2f;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 200px;
+  padding-top: 220px;
 }
 
 .container > div {
-  flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
-  /*demo*/
+  flex: 50%;
   margin-bottom: 20px;
   margin-top: 20px;
   margin-left: 100px;
   margin-right: 100px;
+  border-radius: 40px;
 }
+
+/* SPONSERS CSS*/
+#supporters {
+  text-align: center;
+  color: var(--color-primary);
+  padding-top: 30px;
+  font-size: 40px;
+}
+
+.sponsers {
+  text-align: center;
+  padding-bottom: 150px;
+}
+#sponser1 {
+  padding-right: 40px;
+  filter: brightness(0) invert(1);
+}
+#sponser2 {
+  padding-right: 40px;
+  filter: brightness(0) invert(1);
+}
+#sponser3 {
+  padding-right: 40px;
+  filter: brightness(0) invert(1);
+}
+#sponser4 {
+  padding-right: 40px;
+  filter: brightness(0) invert(1);
+}
+#sponser5 {
+  padding-right: 40px;
+  filter: brightness(0) invert(1);
+}
+/*SPONSER CSS ABOVE */
 
 /* all footer style */
 footer {
-  height: 200px;
+  height: 150px;
   width: 100%;
   padding: 3px;
   background-color: var(--color-black-1);
@@ -177,7 +176,7 @@ footer {
 
 .icoontjes {
   position: relative;
-  margin-top: -85px;
+  margin-top: -100px;
   padding-right: 15px;
 }
 
@@ -202,7 +201,26 @@ footer {
   transition: 0.3s;
 }
 
-footer h3 {
-  margin: 12px;
+footer p {
+  padding-left: 50px;
+  padding-top: 12px;
   color: whitesmoke;
+  /* font-family: sans-serif; */
+}
+
+/*SCROLL COLOUR*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
 }
